@@ -91,7 +91,7 @@
       }
 
       function is_password(asValue) {
-        var regExp = /^(?=.\d)(?=.[a-zA-Z])[0-9a-zA-Z!@#$%^&*]{8,20}$/;
+        var regExp = /^(?=.*\d)(?=.*[a-zA-Z])[0-9a-zA-Z!@#$%^&*]{8,20}$/;
         return regExp.test(asValue);
       }
 
@@ -141,6 +141,7 @@
           },
         });
       }
+      
       function sign_up() {
         let username = $("#input-username").val();
         let password = $("#input-password").val();
